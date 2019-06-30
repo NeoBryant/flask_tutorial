@@ -1,24 +1,27 @@
+# flask_tutorial -- flaskr 博客
+
+[源代码](https://github.com/pallets/flask/tree/1.0.2/examples/tutorial)
+
 
 ## run app
 ```bash
 
 bash:
-
 for mac/linux:
+    # 初始化数据库
     export FLASK_APP=flaskr
     export FLASK_ENV=development
+    flask init-db
+    
+    # 运行服务器
     flask run
 
     visit:  
         http://127.0.0.1:5000/hello 
 
-    export FLASK_APP=flaskr
-    export FLASK_ENV=development
-    flask init-db
-
     visit:  
-        http://127.0.0.1:5000/auth/register
-        http://127.0.0.1:5000/auth/login
+        http://127.0.0.1:5000/auth/register # 注册
+        http://127.0.0.1:5000/auth/login # 登录
 
     flask run
     flaskr
